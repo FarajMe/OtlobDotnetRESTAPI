@@ -18,5 +18,6 @@ namespace OtlobRESTAPI.Data
         public DbSet<Delivery> delivery { get; set; }
         public DbSet<MenuItem> menuitem { get; set; }
         public DbSet<OrderItem> orderitem { get; set; }
+        public DbSet<RestaurantRequest> restaurantrequest { get; set; }
     }
 }
