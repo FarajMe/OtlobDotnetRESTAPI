@@ -17,5 +17,6 @@ namespace OtlobRESTAPI.Data
         public DbSet<Orders> orders { get; set; }
         public DbSet<Delivery> delivery { get; set; }
         public DbSet<MenuItem> menuitem { get; set; }
+        public DbSet<OrderItem> orderitem { get; set; }
     }
 }
