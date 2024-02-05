@@ -93,6 +93,7 @@ namespace OtlobRESTAPI.Controllers
             }
         }
 
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> RemoveRestaurant(int id)
         {
@@ -131,6 +132,25 @@ namespace OtlobRESTAPI.Controllers
                 return BadRequest(new { Message = "Error getting restaurant", Error = ex.Message });
             }
         }
+
+        [HttpGet("address/{address}")]
+        public async Task<IActionResult> GetRestaurantByAddress(string address)
+        {
+            try
+            {
+                var rest = await _db.restaurant.SingleOrDefaultAsync(x => x.address.Equals(address));
+                if (rest == null)
+                {
+                    return NotFound($"Restaurant address {address} not exists ");
+                }
+                return Ok(rest);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { Message = "Error getting restaurant", Error = ex.Message });
+            }
+        }
+
 
 
     }
