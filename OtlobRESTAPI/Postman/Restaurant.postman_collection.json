@@ -1,0 +1,158 @@
+{
+    "info": {
+        "_postman_id": "7ca12f16-cb15-4b28-98c2-1711674d94f3",
+        "name": "Otlob",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "_exporter_id": "23090998"
+    },
+    "item": [
+        {
+            "name": "Get All Restaurant",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "https://localhost:7246/api/Restaurant",
+                    "protocol": "https",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "7246",
+                    "path": [
+                        "api",
+                        "Restaurant"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Restaurant by id",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "https://localhost:7246/api/Restaurant/1",
+                    "protocol": "https",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "7246",
+                    "path": [
+                        "api",
+                        "Restaurant",
+                        "1"
+                    ]
+                }
+            },
+            "response": []
+        },
+
+        {
+            "name": "Get Restaurant by address",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "https://localhost:7246/api/Restaurant/address/yourAddress",
+                    "protocol": "https",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "7246",
+                    "path": [
+                        "api",
+                        "Restaurant",
+                        "address",
+                        "yourAddress"
+                    ]
+                }
+            },
+            "response": []
+        },
+
+
+
+        {
+            "name": "Create Restaurant  ",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"name\": restName,\r\n    \"address\": restAddress,\r\n    \"phone\": restPN,\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "https://localhost:7246/api/Restaurant",
+                    "protocol": "https",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "7246",
+                    "path": [
+                        "api",
+                        "Restaurant"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Delete Restaurant by id",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                    "raw": "https://localhost:7246/api/Restaurant/1",
+                    "protocol": "https",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "7246",
+                    "path": [
+                        "api",
+                        "Restaurant",
+                        "1"
+                    ]
+                }
+            },
+            "response": []
+        },
+
+        {
+			"name": "Update Restaurant by id",
+			"request": {
+			  "method": "PUT",
+			  "header": [],
+			  "body": {
+				"mode": "raw",
+				"raw": "{\r\n    \"name\": restName,\r\n    \"address\": restAddress,\r\n    \"phone\": restPN\r\n}",
+				"options": {
+				  "raw": {
+					"language": "json"
+				  }
+				}
+			  },
+			  "url": {
+				"raw": "https://localhost:7246/api/Restaurant/1",
+				"protocol": "https",
+				"host": [
+				  "localhost"
+				],
+				"port": "7246",
+				"path": [
+				  "api",
+				  "Restaurant",
+				  "1"
+				]
+			  }
+			},
+			"response": []
+		}
+    ]
+}

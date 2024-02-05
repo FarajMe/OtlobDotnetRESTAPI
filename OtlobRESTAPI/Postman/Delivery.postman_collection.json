@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "7ca12f16-cb15-4b28-98c2-1711674d94f3",
+		"name": "Otlob",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23090998"
+	},
+	"item": [
+		{
+			"name": "Get All Deliverys",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7246/api/Delivery",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7246",
+					"path": [
+						"api",
+						"Delivery"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Delivery by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7246/api/Delivery/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7246",
+					"path": [
+						"api",
+						"Delivery",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Delivery",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderId\": 1,\r\n    \"driverId\": 1,\r\n    \"vehicleId\": 2,\r\n    \"deliveryStatus\": completed\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7246/api/Delivery",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7246",
+					"path": [
+						"api",
+						"Delivery"
+					]
+				}
+			},
+			"response": []
+		},
+
+		{
+			"name": "Delete Delivery by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7246/api/Delivery/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7246",
+					"path": [
+						"api",
+						"Delivery",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+
+		{
+			"name": "Update Delivery by id",
+			"request": {
+			  "method": "PUT",
+			  "header": [],
+			  "body": {
+				"mode": "raw",
+				"raw": "{\r\n    \"orderId\": 1,\r\n    \"driverId\": 1,\r\n    \"vehicleId\": 1,\r\n    \"deliveryStatus\": canceled\r\n}",
+				"options": {
+				  "raw": {
+					"language": "json"
+				  }
+				}
+			  },
+			  "url": {
+				"raw": "https://localhost:7246/api/Delivery/1",
+				"protocol": "https",
+				"host": [
+				  "localhost"
+				],
+				"port": "7246",
+				"path": [
+				  "api",
+				  "Delivery",
+				  "1"
+				]
+			  }
+			},
+			"response": []
+		}
+		
+	]
+}
